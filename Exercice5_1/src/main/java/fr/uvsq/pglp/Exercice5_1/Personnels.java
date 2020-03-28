@@ -1,12 +1,17 @@
 package fr.uvsq.pglp.Exercice5_1;
 
+import java.io.Serializable;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Personnels implements PersonelsInter {
+public class Personnels implements PersonelsInter, Serializable{
+	/**
+	 * a version d’un classe pour la sérialisation 
+	 */
+	//private static final long serialVersionUID = 1L;
 	/**
 	 * parametre obligatoire
 	 */

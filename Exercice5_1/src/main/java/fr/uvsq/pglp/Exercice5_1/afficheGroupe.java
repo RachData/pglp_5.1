@@ -1,9 +1,14 @@
 package fr.uvsq.pglp.Exercice5_1;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 
-public class afficheGroupe {
+public class afficheGroupe implements Serializable{
+	/**
+	 * la version d’un classe pour la sérialisation 
+	 */
+//	private static final long serialVersionUID = 1L;
 	public ArrayList<PersonelsInter> grp=new ArrayList<PersonelsInter>();
 	
 	public afficheGroupe (PersonelsInter root) {

@@ -1,10 +1,15 @@
 package fr.uvsq.pglp.Exercice5_1;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class CompositePerso implements PersonelsInter {
+public class CompositePerso implements PersonelsInter, Serializable{
 	
+	/**
+	 * a version d’un classe pour la sérialisation
+	 */
+	//private static final long serialVersionUID = 1L;
 	private int IDgrp;
 	public ArrayList<PersonelsInter> grpPerso=new ArrayList<PersonelsInter>();
 	
