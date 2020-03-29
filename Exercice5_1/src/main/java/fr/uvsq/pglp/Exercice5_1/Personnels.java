@@ -86,9 +86,29 @@ public class Personnels implements PersonelsInter, Serializable{
 	}
 	
 	
-	public String toString(){
+	
+	@Override
+	public String toString() {
+		return ", Id=" + Id +"Personnels [nom=" + nom + ", prenom=" + prenom + ", dateDeNaissance=" + dateDeNaissance + ", numTel=" + numTel + "]";
+	}
+	/*public String toString(){
 		  String str = "\t je suis un Personnel ID ==>> " + this.Id;
 		  return str;
+	}*/
+	public String getNom() {
+		return nom;
+	}
+	public String getPrenom() {
+		return prenom;
+	}
+	public int getId() {
+		return Id;
+	}
+	public LocalDate getDateDeNaissance() {
+		return dateDeNaissance;
+	}
+	public ArrayList<Integer> getNumTel() {
+		return numTel;
 	}
 	
 
