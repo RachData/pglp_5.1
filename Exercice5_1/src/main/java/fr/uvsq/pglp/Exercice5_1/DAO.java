@@ -1,8 +1,8 @@
 package fr.uvsq.pglp.Exercice5_1;
 
-import java.sql.Connection;
+import java.io.Serializable;
 
-public abstract class DAO<T> {
+public abstract class DAO<T> implements Serializable{
 	
 	public abstract T create(T obj);
 	public abstract T find(String id);
