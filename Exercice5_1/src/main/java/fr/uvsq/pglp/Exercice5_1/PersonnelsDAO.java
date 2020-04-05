@@ -1,5 +1,11 @@
 package fr.uvsq.pglp.Exercice5_1;
 
+/**
+ * La classe PersonnelsDAO permet d'enregistrer le personnele
+ * de l'entreprise
+ * @author root
+ *
+ */
 public class PersonnelsDAO extends DAO<Personnels>{
 
 	@Override
